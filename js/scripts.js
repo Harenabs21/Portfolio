@@ -50,14 +50,6 @@
             }
         });
     });
-    //Typing animation
-    var typed = new Typed(".multiple-text",{
-        strings : ["Developer","Web Designer","Freelancer"],
-        typeSpeed: 50,
-        backSpeed : 50,
-        backDelay:1000,
-        loop : true
-    })
     // grayscale animation when hovering the image
     var image = document.getElementById("myself");
 
@@ -123,7 +115,7 @@ let calcScrollValue = ()=>{
     window.onload = calcScrollValue;
 //mastheading skaking animation parameter
 const word = document.getElementsByClassName('masthead-heading');
-
+const typing = document.getElementsByClassName('typing');
 for(let i =0; i< word.length;i++){
     word[i].addEventListener('animationend',()=>{
         word[i].classList.remove('animated');
@@ -132,6 +124,15 @@ for(let i =0; i< word.length;i++){
         word[i].classList.add('animated')
     })
 }
+for(let i =0; i< typing.length;i++){
+    typing[i].addEventListener('animationend',()=>{
+        typing[i].classList.remove('animated');
+    })
+    typing[i].addEventListener('mouseover',()=>{
+        typing[i].classList.add('animated')
+    })
+}
+
 //loader js
 const loader = document.getElementById("loader")
 window.addEventListener('load',()=>{
