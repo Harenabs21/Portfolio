@@ -327,10 +327,10 @@
     right: 1.2em;
   }
   /* text-shaking animation*/
-  .text1-h1 h1, .text2-h1 h1, .text3-h1 h1, .text4-h1{
+  .text1-h1 h1, .text2-h1 h1, .text3-h1 h1, .text4-h1 h1{
     display: inline-block;
   }
-  .stroke:hover, .me:hover, .typing{
+  .stroke:hover, .me:hover, .typing:hover{
     color: #1abc9c;
   }
   .animated{
